@@ -14,9 +14,12 @@ class CreateVotersInfosTable extends Migration
     public function up()
     {
         Schema::create('voters_infos', function (Blueprint $table) {
+            $table->foreign('candidate_id')
+                ->references('id')->on('candidates')
+                ->onDelete('cascade');
             $table->increments('id');
             $table->string ('phone',20);
-            $table->unsignedInteger ('candidate_id');
+            $table->unsignedInteger ('candidate_id')->unsigned();
             $table->timestamps();
         });
     }
