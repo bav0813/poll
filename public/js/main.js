@@ -6,7 +6,6 @@ var intervalID;
 $(document).ready(function() {
     intervalID = setInterval(function () {
         getPoll();
-        // alert(updatePeriod);
     }, updatePeriod);
 });
 
@@ -17,7 +16,6 @@ $(".button_1sec").click(function () {
     clearInterval(intervalID);
     intervalID = setInterval(function () {
         getPoll();
-        // alert(updatePeriod);
     }, updatePeriod);
 });
 
@@ -27,7 +25,6 @@ $(".button_3sec").click(function () {
     clearInterval(intervalID);
     intervalID = setInterval(function () {
         getPoll();
-        // alert(updatePeriod);
     }, updatePeriod);
 
 });
@@ -38,7 +35,6 @@ $(".button_5sec").click(function () {
     clearInterval(intervalID);
     intervalID = setInterval(function () {
         getPoll();
-        // alert(updatePeriod);
     }, updatePeriod);
 });
 

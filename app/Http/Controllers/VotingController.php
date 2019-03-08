@@ -45,34 +45,6 @@ class VotingController extends Controller
 
 
 
-//    public function sendapidata()
-//    {
-//        header("Content-Type: application/json");
-//
-//        $url = 'http://localhost:8000/api/smspoll';
-//        $data=
-//            '{
-//              "phone": "447700900001",
-//              "candidate_id": "3",
-//
-//            }';
-//
-//        $ch = curl_init('http://localhost:8000/api/smspoll' . '/q/splash');
-//        curl_setopt($ch, CURLOPT_URL,$url);
-//        curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
-//        curl_setopt($ch, CURLOPT_POST, 1);
-//        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-//        curl_exec($ch);
-//        $returned=curl_multi_getcontent($ch);
-//        var_dump ($returned);
-//        curl_close ($ch);
-//        //  var_dump ($returned);
-//        //   var_dump(http_response_code());
-//
-//
-//
-//
-//    }
 
 
 
